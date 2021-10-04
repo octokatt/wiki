@@ -24,5 +24,4 @@
   * [kNN Analysis in ScikitLearn](python/knn-notes.md)
 * [bash](bash/README.md)
   * [helpful\_cmd](bash/helpful_cmd.md)
-* [readme](undefined.md)
 
