@@ -2,7 +2,6 @@
 
 So, here's a basic example of linear regression using Python.
 
-
 ```python
 print(__doc__)
 
@@ -58,18 +57,17 @@ plt.yticks(())
 plt.show()
 ```
 
-    Automatically created module for IPython interactive environment
-    Coefficients: 
-     [938.23786125]
-    Mean squared error: 2548.07
-    Variance score: 0.47
+```text
+Automatically created module for IPython interactive environment
+Coefficients: 
+ [938.23786125]
+Mean squared error: 2548.07
+Variance score: 0.47
+```
 
-
-
-![png](output_1_1.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_1_1.png)
 
 ```python
 
 ```
+

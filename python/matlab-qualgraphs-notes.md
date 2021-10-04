@@ -1,9 +1,10 @@
-# MatPlotLib Qualitative Graphing Notes
+# matlab-qualgraphs-notes
 
-So, last time was all of the line graphs.  Now for all those other silly kinds of graphs.
+## MatPlotLib Qualitative Graphing Notes
 
-The good news is most of the labeling and fiddling is the same across any kind of graph, but some labels are more necessary than others.  Bar graphs without a labeled x-axis are particularly useless, as are pie charts without legends.
+So, last time was all of the line graphs. Now for all those other silly kinds of graphs.
 
+The good news is most of the labeling and fiddling is the same across any kind of graph, but some labels are more necessary than others. Bar graphs without a labeled x-axis are particularly useless, as are pie charts without legends.
 
 ```python
 from matplotlib import pyplot as plt
@@ -19,16 +20,13 @@ ax.set_xticklabels(drinks)
 plt.show()
 ```
 
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_1_0.png)
 
-![png](output_1_0.png)
+## Bar Graphs with more than One Bar
 
-
-# Bar Graphs with more than One Bar
-
-Making a two-bar plot is annoying enough that Excel will sound nice.  Still, if it's a large dataset, this is still nicer, it just takes a little extra code.  Remember that by default bars are 2u apart, so split bars should be 0.8, etc.  The following code has a nice way of breaking down the needed widths so Python can do the really annoying parts of the design.
+Making a two-bar plot is annoying enough that Excel will sound nice. Still, if it's a large dataset, this is still nicer, it just takes a little extra code. Remember that by default bars are 2u apart, so split bars should be 0.8, etc. The following code has a nice way of breaking down the needed widths so Python can do the really annoying parts of the design.
 
 Stacked bar graphs are a little easier, as seen in the second example.
-
 
 ```python
 from matplotlib import pyplot as plt
@@ -50,10 +48,7 @@ plt.bar(store2_x, sales2)
 plt.show()
 ```
 
-
-![png](output_3_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_3_0.png)
 
 ```python
 from matplotlib import pyplot as plt
@@ -73,10 +68,7 @@ plt.legend(legend_values)
 plt.show()
 ```
 
-
-![png](output_4_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_4_0.png)
 
 ```python
 from matplotlib import pyplot as plt
@@ -93,10 +85,7 @@ plt.bar(range(len(ounces_of_milk)), ounces_of_milk, yerr=error, capsize=5)
 plt.show()
 ```
 
-
-![png](output_5_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_5_0.png)
 
 ```python
 from matplotlib import pyplot as plt
@@ -133,10 +122,7 @@ plt.ylabel('Number of Students')
 plt.show()
 ```
 
-
-![png](output_6_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_6_0.png)
 
 ```python
 from matplotlib import pyplot as plt
@@ -164,12 +150,9 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-
-![png](output_7_0.png)
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_7_0.png)
 
 ### Line Graphs with Neat Features
-
 
 ```python
 from matplotlib import pyplot as plt
@@ -191,16 +174,13 @@ plt.fill_between(months, y_lower, y_upper, alpha=0.2)
 plt.show()
 ```
 
-
-![png](output_9_0.png)
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_9_0.png)
 
 ### Pie Charts
 
-Yay pie charts!  Almost as good as cake.
+Yay pie charts! Almost as good as cake.
 
-Note, always use the ```plt.axis('equal')``` statement, as otherwise the pie chart will default to weirdly tilted.  No one likes tilted pie charts.  
-
+Note, always use the `plt.axis('equal')` statement, as otherwise the pie chart will default to weirdly tilted. No one likes tilted pie charts.
 
 ```python
 from matplotlib import pyplot as plt
@@ -215,6 +195,5 @@ plt.legend(payment_method_names)
 plt.show()
 ```
 
-
-![png](output_11_0.png)
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_11_0.png)
 

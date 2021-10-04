@@ -4,7 +4,7 @@ description: Returning richer context
 
 # Over Partition
 
-OVER PARTITION is an amazing way to generate summary data within the greater context of a table without needed an additional step to process the SQL query output.  
+OVER PARTITION is an amazing way to generate summary data within the greater context of a table without needed an additional step to process the SQL query output.
 
 For example, a manager wants a report of their call center agents with both their average handle time \(AHT\) and their department's overall AHT.
 
@@ -30,7 +30,7 @@ AVERAGE(t.call_time) OVER (
 FROM table1 t
 ```
 
-This can also be used to create running totals and averages by limiting the partition using the table row.  An example would be to show the running total of an account balance over a number of different accounts. 
+This can also be used to create running totals and averages by limiting the partition using the table row. An example would be to show the running total of an account balance over a number of different accounts.
 
 ```text
 SUM(acc.amount) OVER (

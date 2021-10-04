@@ -1,7 +1,6 @@
 # MatPlotLib!  The Dreaded Line Graph...
 
-Matplotlib is the default library to create charts for data analysis with Python.  It works pretty well, and I get the satisfaction of learning how to use the code set I watched all my friends in college swear at for multiple years.  Neat!
-
+Matplotlib is the default library to create charts for data analysis with Python. It works pretty well, and I get the satisfaction of learning how to use the code set I watched all my friends in college swear at for multiple years. Neat!
 
 ```python
 from matplotlib import pyplot as plt
@@ -14,10 +13,7 @@ plt.plot(days, money_spent)
 plt.show()
 ```
 
-
-![png](output_2_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_2_0.png)
 
 ```python
 time = [0, 1, 2, 3, 4]
@@ -29,16 +25,13 @@ plt.plot(time, costs)
 plt.show()
 ```
 
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_3_0.png)
 
-![png](output_3_0.png)
+These are pretty basic examples, and don't show off the strength of being able to generate a chart with a couple hundred points of data very quickly. This library can chew what Excel chokes on -- nothing is worse than sending over a good chart and finding out the CFO with a 4GB Surface Pro has no idea what chart you're talking about.
 
+## Charting with Style
 
-These are pretty basic examples, and don't show off the strength of being able to generate a chart with a couple hundred points of data very quickly.  This library can chew what Excel chokes on -- nothing is worse than sending over a good chart and finding out the CFO with a 4GB Surface Pro has no idea what chart you're talking about.
-
-### Charting with Style
-
-Matplotlib can get much fancier.  Below are charts demonstrating some bells and whistles, and a more complete list can be found in the docs, linked [here](https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D)
-
+Matplotlib can get much fancier. Below are charts demonstrating some bells and whistles, and a more complete list can be found in the docs, linked [here](https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D)
 
 ```python
 from matplotlib import pyplot as plt
@@ -57,10 +50,7 @@ plt.legend(legend_labels, loc=4)
 plt.show()
 ```
 
-
-![png](output_6_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_6_0.png)
 
 ```python
 from matplotlib import pyplot as plt
@@ -83,10 +73,7 @@ plt.subplots_adjust(wspace=0.35, bottom=0.2)
 plt.show()
 ```
 
-
-![png](output_7_0.png)
-
-
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_7_0.png)
 
 ```python
 from matplotlib import pyplot as plt
@@ -109,16 +96,14 @@ ax.set_yticklabels(['10%', '25%', '50%', '75%'])
 plt.show()
 ```
 
+![png](https://github.com/octokatt/wiki/tree/dafb14549b591f1b0049d5daaf79d06e56aefada/python/output_8_0.png)
 
-![png](output_8_0.png)
+## Generally Useful Things
 
-
-### Generally Useful Things
-
-* To save a figure, use ```plt.figure(figsize=(3,3))``` and ```plt.savefig('example_name.png')```
-* To remove all figures, use ```plt.close('all')```
-
+* To save a figure, use `plt.figure(figsize=(3,3))` and `plt.savefig('example_name.png')`
+* To remove all figures, use `plt.close('all')`
 
 ```python
 
 ```
+
