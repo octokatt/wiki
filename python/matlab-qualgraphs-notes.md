@@ -178,7 +178,7 @@ plt.show()
 
 ### Pie Charts
 
-Yay pie charts! Almost as good as cake.
+Pie charts are terrible, because they give no historical context.  But, people still like them, so here's how to make one.
 
 Note, always use the `plt.axis('equal')` statement, as otherwise the pie chart will default to weirdly tilted. No one likes tilted pie charts.
 
