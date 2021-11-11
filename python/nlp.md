@@ -13,6 +13,16 @@ To get to a useful word bag, there are three-ish steps for standard English NLP:
 Further reading available in the [doc](https://www.nltk.org/book/ch03.html).
 
 
+#### Common Acronyms & Terms
+
+- POS: Part-of-speech -- this one will normally be spelled out to distinguish it from other uses of the acronym
+- NER: Named Entity Recognition -- understanding that Berlin or Katt is a word
+- TF-IDF: Term Frequency-Inverse Document Frequency -- 
+- LDA: Latent Dirichlet Allocation -- a statistical model that finds words and topics in a given text
+- Bigrams -- Two-word sets
+- Trigrams -- Three-word sets
+
+
 ### Noise Removal
 
 This is... hilariously boring, and will take a lot of Regex.  A ton of NLP data engineering is just sorting through this noise removal process.
@@ -78,7 +88,7 @@ Removing stop words isn't quite normalization, and not quite tokenization, but s
 First, some definitions:
 
 * Stemming is removing the prefixes or suffixes from a word so it goes in the bucket easier
-* Lemmatization is replacing a single word with its root word ()
+* Lemmatization is replacing a single word with its root word (is -> be)
 
 Stemming can be more efficient because it doesn't need the part-of-speech for a word, where lemmatization really does to work well.
 
@@ -124,6 +134,48 @@ print(lemmatized_words)
 You can fix this hiccup by comparing each tokenized word of the string to a thesaurus, then returning the part of speech of the closest word in the thesaurus and passing the part of speech to the lemmatizer.  
 
 Also worth noting is that NLTK has multiple word lemmatizers, and poking about a bit for a more appropriate one may help a project significantly.
+
+
+## Types of NLP
+
+Obviously, this is a large field.  Here are some different approaches.
+
+
+#### Bag of Words
+
+# Pros: | Cons:
+--------|----------
+Simple implementation | Disregards word order
+Useful to find overall topics | Not helpful for sentiment
+
+
+
+#### N-grams
+
+This gets into sets of words, which... is like a bag of words, but with sets of words.  
+
+
+# Pros: | Cons:
+--------|----------
+Can pick up some complexity | Is still basically a bag of words
+
+
+```python
+from collections import Counter
+
+looking_glass_bigrams = ngrams(tokenized, 2)
+looking_glass_bigrams_frequency = Counter(looking_glass_bigrams)
+
+rint("Looking Glass Bigrams:")
+print(looking_glass_bigrams_frequency.most_common(10))
+# prints 10 most common bigrams
+
+```
+
+
+
+
+
 
 
 
