@@ -89,7 +89,7 @@ mean \| Average of all values in column \| std \| Standard deviation median \| M
 
 If slicing and dicing is needed, aggregate by sub-type using syntax like:
 
-```text
+
 To make the output a proper dataframe instead of a series, add an ```reset_index()``` to the end, with both sets of parenthesis.
 
 This can definitely start getting more complex, for example:

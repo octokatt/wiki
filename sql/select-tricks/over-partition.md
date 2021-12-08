@@ -24,7 +24,7 @@ A query can be constructed to find the average handle time by agent using OVER P
 AVERAGE(t.call_time) OVER (
     PARTITION BY t.id
     ) AS 'agent_aht'
-,AVERAGE(t.call_time) OVER )
+,AVERAGE(t.call_time) OVER (
     PARTITION BY t.department
     ) AS 'department_aht'
 FROM table1 t
