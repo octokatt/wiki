@@ -148,6 +148,21 @@ Obviously, this is a large field.  Here are some different approaches.
 Simple implementation | Disregards word order
 Useful to find overall topics | Not helpful for sentiment
 
+```python
+from preprocessing import preprocess_text
+# Define text_to_bow() below:
+
+def text_to_bow(some_text):
+  bow_dictionary = {}
+  tokens = preprocess_text(some_text)
+  for token in tokens:
+    if token in bow_dictionary:
+      bow_dictionary[token] += 1
+    else:
+      bow_dictionary[token] = 1
+
+  return bow_dictionary
+ ```
 
 
 #### N-grams
