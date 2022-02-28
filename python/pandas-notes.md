@@ -136,3 +136,15 @@ pd.merge(
 
 To merge together two dataframes with identical columns \(such as for data from two rounds of the same experiment, or two sign-up sheets\), use `pd.concat([df1, df2])`.
 
+
+Iterating over rows:
+```python
+#create dataframe
+df_marks = pd.DataFrame({
+    'name': ['apple', 'banana', 'orange', 'mango'],
+    'calories': [68, 74, 77, 78]})
+
+#iterate through each row of dataframe
+for index, row in df_marks.iterrows():
+    print(index, ': ', row['name'], 'has', row['calories'], 'calories.')
+```

@@ -24,4 +24,7 @@
   * [kNN Analysis in ScikitLearn](python/knn-notes.md)
 * [bash](bash/README.md)
   * [helpful\_cmd](bash/helpful_cmd.md)
-
+* [math](math/README.md)
+  * [Basic Definitions](math/definitions.md)
+  * [Linear Regressions](math/linear-regression.md)
+  * [Meaningful Sampling](math/sampling.md)
