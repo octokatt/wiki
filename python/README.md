@@ -1,5 +1,8 @@
 # python
 
+This section... is currently a pile of notes from across about five years, and hasn't really been cleaned up much.  Everything is correct, but there's a decent bit of mess.  You've been warned.
+
+
 General things to keep in mind with Python:
 
 * Python is _zero-indexed_; everything starts at 0

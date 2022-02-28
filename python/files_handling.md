@@ -5,6 +5,13 @@ description: Importing files _without_ Pandas
 There are a lot of different types of files.  This is the way to interact with a lot of those files, focusing on local files (not API calls)
 
 
+### A Quick Aside for Modules
+
+* Libraries or Packages are properly called Modules
+* Other .py files are also Modules, and are imported the same way (no .py extension needed)
+* Actual docs get opened a little differently
+
+
 ### Opening Basic Files
 
 This one is pretty straight forwards.
